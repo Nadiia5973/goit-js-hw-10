@@ -1,0 +1,110 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./vite-promo.css');
+@import url('./badges.css');
+@import url('./back-link.css');
+@import url('./footer.css');
+body {
+  margin: auto;
+}
+button,
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px 0;
+  justify-content: center;
+}
+
+.gallery-item {
+  display: flex;
+  width: 360px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
+.link-page {
+display: flex;
+justify-content: center;
+}
+.link-btn {
+  position: relative;
+  margin: 12px auto;
+  max-width: 94px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background-color: rgb(175, 173, 169);
+}
+.feedback-form {
+position: relative;
+margin: 40px auto;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 16px;
+border-radius: 8px;
+padding: 24px;
+max-width: 408px;
+border: solid 1px #cfcfcf;
+}
+label{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+input{
+  border: 1px solid #808080;
+border-radius: 4px;
+width: 360px;
+height: 40px;
+}
+textarea{
+  border: 1px solid #808080;
+border-radius: 4px;
+width: 360px;
+height: 80px;
+}
+button{
+width: 95px;
+height: 40px;
+background: #4e75ff;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+border: solid 1px #4e75ff;
+border-radius: 8px;
+}
+input:hover,
+textarea:hover{
+  border: 1px solid #000;
+}
+button:hover{
+  background: #6c8cff;
+  border: solid 1px #6c8cff;
+}
